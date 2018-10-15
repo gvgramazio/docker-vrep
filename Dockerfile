@@ -1,5 +1,5 @@
 # Use an official Ubuntu distribution as a parent image
-FROM ubuntu:18.04
+FROM nvidia/cuda:10.0-base-ubuntu18.04
 
 RUN apt-get update
 
