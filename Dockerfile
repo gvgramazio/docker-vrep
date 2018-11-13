@@ -11,7 +11,8 @@ RUN apt-get update && apt-get install -y \
   libxrender-dev \
   libxi6 \
   libdbus-1-3 \
-  libfontconfig1
+  libfontconfig1 \
+  && rm -rf /var/lib/apt/lists/*
 
 RUN wget http://coppeliarobotics.com/files/V-REP_PRO_EDU_V3_5_0_Linux.tar.gz
 RUN tar -xf V-REP_PRO_EDU_V3_5_0_Linux.tar.gz
