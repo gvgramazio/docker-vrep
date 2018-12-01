@@ -22,5 +22,5 @@ RUN wget http://coppeliarobotics.com/files/V-REP_PRO_EDU_V3_5_0_Linux.tar.gz
 RUN tar -xf V-REP_PRO_EDU_V3_5_0_Linux.tar.gz
 RUN apt-get remove -y wget
 
-RUN echo 'export QT_DEBUG_PLUGINS=1' >> ~/.bashrc
-RUN echo 'export PATH=/V-REP_PRO_EDU_V3_5_0_Linux/:$PATH' >> ~/.bashrc
+RUN echo "export QT_DEBUG_PLUGINS=1" >> ~/.bashrc
+RUN echo "export PATH=/V-REP_PRO_EDU_V3_5_0_Linux/:$PATH" >> ~/.bashrc
