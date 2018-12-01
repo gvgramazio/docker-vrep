@@ -3,7 +3,7 @@ FROM nvidia/opengl:1.0-glvnd-devel-ubuntu16.04
 LABEL mantainer="gvgramazio@gmail.com" \
       version="0.1"
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y --no-install-recommends \
   wget \
   libglib2.0-0  \
   libgl1-mesa-glx \
